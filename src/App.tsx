@@ -1,4 +1,3 @@
-import React from 'react'
 import Dashboard from './pages/dashboard'
 
 function App() {
@@ -8,4 +7,3 @@ function App() {
 }
 
 export default App
-
