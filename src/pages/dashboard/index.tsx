@@ -4,7 +4,7 @@ import { AppSidebar } from "@/components/sidebar";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 export default function Dashboard() {
-    const defaultOpen = typeof window !== "undefined" ? window.innerWidth >= 1024 : true
+    const defaultOpen = window.innerWidth >= 1024
   return (
     <SidebarProvider defaultOpen={defaultOpen}>
       <AppSidebar />
