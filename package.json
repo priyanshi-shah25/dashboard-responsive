@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write .",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "echo \"No tests yet\""
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -53,6 +55,7 @@
   "lint-staged": {
     "*.{js,ts,jsx,tsx,json,css,scss,md}": [
       "prettier --write",
+      "eslint --fix",
       "git add"
     ]
   }
